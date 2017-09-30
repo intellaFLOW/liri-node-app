@@ -111,7 +111,11 @@ function insideLIRI(user) {
 	// Log searches to log.txt
 	var logTxt = user.name + ' Attempted Search: ' + user.choice + ' ' + user.search + '\n';
 
-  fs.appendFile('log.txt', logTxt);
+  fs.appendFile('log.txt', logTxt, function(err){
+  	if (err){
+  		console.log(err);
+  	}
+  });
 }
 
 // LIRI's Mouth
