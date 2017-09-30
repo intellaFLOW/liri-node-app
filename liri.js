@@ -15,6 +15,7 @@ var client = new twitter({
     access_token_key: tKeys.access_token_key,
     access_token_secret: tKeys.access_token_secret
 });
+
 // Get Tweets Method
 function getTweets() {
 	// tell it which data we want
@@ -168,11 +169,11 @@ inquirer.prompt([
 	}
 
 	else {
-		// console.log message
+		// console.log pretend error message to reset
 		console.log('LIRI is having difficulty, please try again =(');
 
 	}
-// Catches any errors the promise would have otherwise swallowed and logs it
+// Catches errors and console.logs them
 }).catch(function(err) {
 	console.log(err);
 });
