@@ -30,3 +30,9 @@ Unknown User Attempted Search: movie-this "8 Mile"
 Unknown User Attempted Search: spotify-this-song "In The End"
 Unknown User Attempted Search: spotify-this-song In The End
 Unknown User Attempted Search: spotify-this-song "Ink Blot"
+Unknown User Attempted Search: do-what-it-says undefined
+Unknown User Attempted Search: spotify-this-song "I Want it That Way"
+CollinAttempted Search: spotify-this-song In The End
+UserAttempted Search: spotify-this-song In The End
+UserAttempted Search: spotify-this-song ljnsdgjnsg
+Collin Attempted Search: spotify-this-song kjnaglnag

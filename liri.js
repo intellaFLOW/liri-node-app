@@ -95,20 +95,21 @@ function insideLIRI(user) {
 			// console.log if err
 			if (err) {
 				console.log(err);
-			} else {
-			  // otherwise output string seperated by commas
-			  var output = data.split(',');
-			  // set keys of importance to array
-			  user.choice = output[0];
-			  user.search = output[1];
-			  // Recall
-			  insideLIRI(user);
+			} 
+			else {
+				// otherwise output string seperated by commas
+				var output = data.split(',');
+				// set keys of importance to array
+				user.choice = output[0];
+				user.search = output[1];
+					// Recall
+					insideLIRI(user);
 			}
 		});
 	}
 
 	// Log searches to log.txt
-	var logTxt = 'Unknown User Attempted Search: ' + user.choice + ' ' + user.search + '\n';
+	var logTxt = user.name + ' Attempted Search: ' + user.choice + ' ' + user.search + '\n';
 
   fs.appendFile('log.txt', logTxt);
 }
